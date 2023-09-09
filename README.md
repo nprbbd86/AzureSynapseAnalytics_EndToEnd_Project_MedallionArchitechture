@@ -47,11 +47,4 @@ The primary goal of this GitHub portfolio project is to implement robust analyti
 
 <!-- ARCHITECTURE DIAGRAM -->
 ## Architecture Diagram<a name="architecture-diagram"></a>
-vuuiberb
-2
-3
-4
-5
-6
-7
-
+![Picture](https://github.com/nprbbd86/nupurbobade/blob/main/Architechture%20Diagram.png)
