@@ -1,4 +1,4 @@
-# Azure Data Factory and Databricks End-to-End Project - Medallion Architecture
+# Azure Synapse Analytics End-to-End Project - Medallion Architecture
 
 Welcome to my Azure Data Analytics project, where I leverage Azure services to analyze trip transactions/ride-based data from a SQL server. This project is aimed at providing valuable insights by implementing the Medallion Architecture, a data structuring framework consisting of three layers: Bronze, Silver, and Gold. Each layer has its unique purpose, making data processing more efficient and insightful.
 
