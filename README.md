@@ -1,6 +1,6 @@
 # Azure Synapse Analytics End-to-End Project - Medallion Architecture
 
-Welcome to my Azure Data Analytics project, where I leverage Azure services to analyze trip transactions/ride-based data from a SQL server. This project is aimed at providing valuable insights by implementing the Medallion Architecture, a data structuring framework consisting of three layers: Bronze, Silver, and Gold. Each layer has its unique purpose, making data processing more efficient and insightful.
+Welcome to my Azure Data Analytics project, where I leverage Azure Synapse services to analyze NYC Green taxi trips data. This project is aimed at providing valuable insights by implementing the Medallion Architecture, a data structuring framework consisting of three layers: Raw(Bronze), Structured(Silver), and Curated(Gold). Each layer has its unique purpose, making data processing more efficient and insightful.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -11,40 +11,61 @@ Welcome to my Azure Data Analytics project, where I leverage Azure services to a
 * [Dataset Used](#datasetused)
 * [Project Codes and Files](#projectfiles)
 * [Fact Dimension Tables - Data Modelling](#datamodelling)
-* [Data Analysis and Visualisation](#datavisuals)
-* [Contact](#contact)
+
 
 <!-- Project Goals -->
 ## Project Goals<a name="projectgoals"></a>
 
-The primary goal of this GitHub portfolio project is to implement robust analytics and insights on trip transactions data from a SQL server. Leveraging a comprehensive stack of Azure services, including Azure Data Factory (ADF), Azure Blob Storage, and Azure Databricks, we aim to achieve the following objectives:
-
-#### 1) Medallion Architecture Implementation:
+The primary goal of this GitHub portfolio project is to implement robust analytics and insights on NYC Green taxi trips data. Leveraging Azure Synapse Analytics, we aim to achieve the following objectives:
 
 - Ingest data into the Bronze layer, maintaining its raw state.
-- Utilize Azure Databricks for data transformation, creating a Silver layer with validated, enriched data.
-- Load the refined data into Delta tables in the Gold zone.
-
-#### 2) Azure Databricks for Data Transformations:
-
-- Leveraging PySpark notebooks for advanced data transformations.
+- Utilize Azure Synapse Analystics for data transformation, creating a Silver layer with validated, enriched data.
+- Load the refined data in the Gold zone.
 - Implementing Fact and Dimension data modeling for efficient data handling.
-
-#### 3) Azure Pipelines and Scheduling:
-
 - Create end-to-end Azure Pipelines for data movement and transformation.
-- Leverage Azure Data Factory for scheduling and orchestration.
-- Implement email triggers to ensure pipeline resiliency and monitoring.
 
 
 <!-- TECH STACK -->
 ## Tech Stack<a name="tech-stack"></a>
 
-- 📜 Language: Python, SQL, Spark
-- 📦 Package: PySpark
-- 🌐 Services: Azure Data Factory (ADF), Azure Blob Storage (ADLS Gen2), and Azure Databricks, Logic Apps, Azure SQL Database
+- 📜 Language: SQL , Spark
+- 📦 Package: 
+- 🌐 Services: Azure Synapse
 
 
 <!-- ARCHITECTURE DIAGRAM -->
 ## Architecture Diagram<a name="architecture-diagram"></a>
-![Picture](https://github.com/nprbbd86/nupurbobade/blob/main/Architechture%20Diagram.png)
+![Picture](https://github.com/nprbbd86/AzureSynapseAnalytics_EndToEnd_Project_MedallionArchitechture/blob/main/Project%20resources/Solution%20Architechture.png)
+
+
+
+<!-- Dataset Used -->
+## Dataset Used<a name="datasetused"></a>
+Here is the link to reference dataset:
+https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+ 
+Below is the list of datasets : 
+
+1- Taxi Zone (CSV) <br>
+2- Calendar (CSV)  <br>
+3- Trip Type (TSV)  <br>
+4- Rate Code (JSON)  <br> 
+5- Payment Type (JSON)  <br>
+6- Vendor (CSV)  <br>
+7- Trip Data (Parquet,CSV,Delta)  <br>
+
+
+
+<!-- Project Codes and Files -->
+## Project Codes and Files<a name="projectfiles"></a>
+
+- For Configuration : https://github.com/nprbbd86/AzureSynapseAnalytics_EndToEnd_Project_MedallionArchitechture/tree/main/Project%20resources/SQL%20scripts/config
+- Data Discovery and exploration : https://github.com/nprbbd86/AzureSynapseAnalytics_EndToEnd_Project_MedallionArchitechture/tree/main/Project%20resources/SQL%20scripts/Data%20discovery%20and%20exploration
+- Creating External Tables : https://github.com/nprbbd86/AzureSynapseAnalytics_EndToEnd_Project_MedallionArchitechture/tree/main/Project%20resources/SQL%20scripts/Creating%20external%20tables
+
+
+<!-- Fact Dimension Tables - Data Modelling -->
+## Fact Dimension Tables - Data Modelling<a name="datamodelling"></a>
+![Picture](https://github.com/nprbbd86/AzureSynapseAnalytics_EndToEnd_Project_MedallionArchitechture/blob/main/Project%20resources/Data%20Model.png)
+
+
